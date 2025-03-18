@@ -120,7 +120,8 @@ export const AboutSection = () => {
               />
               <ToolboxItems
                 items={toolboxItems}
-                className="animate-move-left [animation-duration:30s]"
+                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+                className=""
               />
               <ToolboxItems
                 items={toolboxItems}

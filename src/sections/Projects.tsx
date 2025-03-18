@@ -57,10 +57,11 @@ export const ProjectsSection = () => {
           title="Featured Projects"
         />
         <div className="flex flex-col md:mt-20 mt-10 gap-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, index) => (
             <Card
               key={project.title}
-              className="px-8 pt-8 md:pt-12 pb-0 md:px-10 lg:pt-16 lg:px-20"
+              className="px-8 pt-8 md:pt-12 pb-0 md:px-10 lg:pt-16 lg:px-20 sticky"
+              style={{top : `calc(64px + ${index * 40}px)`}}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
@@ -84,7 +85,7 @@ export const ProjectsSection = () => {
                   <a href={project.link}>
                     <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 ">
                       <span>Visit Live Site</span>
-                      <ArrowUpRightIcon classnName="size-4" />
+                      <ArrowUpRightIcon className="size-4" />
                     </button>
                   </a>
                 </div>

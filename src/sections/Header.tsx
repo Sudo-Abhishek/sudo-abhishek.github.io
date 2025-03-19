@@ -15,7 +15,6 @@ export const Header = () => {
       let current = "";
 
       sections.forEach((section) => {
-        console.log("section : ", section);
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
         const sectionBottom = sectionTop + sectionHeight;
